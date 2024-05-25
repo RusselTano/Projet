@@ -1,0 +1,112 @@
+@import url(./contact.css);
+
+/* Styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Composant */
+
+form input[type="submit"] {
+  color: inherit;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 999px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #cccc;
+  text-transform: uppercase;
+  transition:
+    border-color .3s ease-out,
+    color .3s ease-out;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover, footer a:hover {
+  border-color: rgb(36, 157, 187);
+  color: rgb(36, 157, 187);
+}
+
+/* Styles pour l'en-tête et la navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles pour le contenu principal */
+
+#introduction {
+  margin-bottom: 20px;
+}
+
+/* Styles pour le pied de page */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Classes CSS personnalisées */
+.highlight {
+  background-color: #ff0;
+  font-weight: bold;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.margin-20 {
+  margin: 20px 0;
+}
+
+/* ID CSS personnalisés */
+#unique-element {
+  color: red;
+}
+
+#special-header {
+  font-size: 2em;
+}
+
+
+main{
+  height: 100vh;
+}
