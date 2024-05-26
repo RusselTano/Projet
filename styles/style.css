@@ -3,7 +3,13 @@
 \*****************************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face {
+  font-family: rainly;
+  src: url(../fonts/RainlyRegular-OVl7O.otf);
+}
 
 :root {
   /* Colors */
@@ -17,8 +23,8 @@
   /* Text configuration */
   --body-font: 'Montserrat';
   --body-highlight-font: 'Montserrat';
-  --header-font: 'Bebas Neue';
-  --title-font: 'Bebas Neue';
+  --header-font: "Lora", serif;
+  --title-font: "Lora", serif;
 
 
   --body-font-weight: 400;
@@ -111,12 +117,14 @@ canvas {
   padding: 15px 0;
   text-align: center;
   margin-bottom: 30px;
+  background-color: var(--black);
+
 }
 
 .nav__list {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .nav__link {
@@ -125,14 +133,14 @@ canvas {
   font-weight: var(--title-font-weight);
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
-  color: var(--black);
+  color: var(--light-grey);
   text-decoration: none;
 }
 
 .nav__link:hover,
 .nav__link.active {
   text-decoration: underline var(--red-highlight);
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 0.5rem;
   text-decoration-thickness: 0.188rem;
 }
 
@@ -170,7 +178,8 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  row-gap: 20px;
+  row-gap: 10px;
+  column-gap: 30px;
 }
 
 .input-box {
@@ -305,10 +314,6 @@ body {
   color: var(--black);
 }
 
-main {
-  min-height: 100vh;
-}
-
 h1 {
   font-family: var(--header-font);
   font-weight: var(--header-font-weight);
@@ -326,22 +331,21 @@ h2 {
   line-height: var(--title-line-height);
   color: var(--black);
   text-decoration: underline var(--red-highlight);
-  text-underline-offset: 0.25rem;
-  text-decoration-thickness: 0.188rem;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.2rem;
   margin-bottom: 20px;
 }
-
-/* ************ Accueil ***********\
-
-\**********************************/
 
 .content {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  /* background-color: #25D366; */
   padding: 0 100px;
   margin: 0 50px 50px;
+}
+
+#home-title {
+  color: var(--red-highlight);
 }
 
 .projet__content a:hover {
@@ -357,6 +361,11 @@ tr td {
 .passion {
   display: grid;
   row-gap: 20px;
+}
+
+.passion #karate {
+  font-family: rainly;
+  font-size: 32px;
 }
 
 .passion__image {
@@ -384,7 +393,6 @@ tr td {
   * {
     font-size: 14px;
   }
-
 
   form {
     width: 350px;
@@ -428,13 +436,12 @@ tr td {
     align-items: center;
   }
 
-  .content h2{
+  .content h2 {
     align-self: start;
   }
-  
+
   .passion {
     display: flex;
     flex-direction: column;
-
   }
 }
